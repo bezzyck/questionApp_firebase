@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <title>Вопросник</title>
+</head>
+<body>
+<button class="mui-btn mui-btn--fab mui-btn--danger floating__btn" id="modal__add">Все</button>
+<div id="sidebar">
+    <div class="mui--text-white mui--text-display1 mui--align-vertical">Вопросник</div>
+</div>
+<div id="content" class="mui-container-fluid">
+    <div class="mui-row">
+        <div class="mui-col-sm-10 mui-col-sm-offset-1">
+            <br>
+            <br>
+            <div class="mui--text-black-54 mui--text-body2">Задайте свой вопрос</div>
+            <div class="mui-divider"></div>
+            <br>
+<!-- Form-->
+            <form class="mui-form" id="form">
+                <div class="mui-textfield">
+                    <input type="text" placeholder="Введите текст вопрса" id="textInput" required minlength="10" maxlength="250">
+                </div>
+                <button type="submit"
+                        class="mui-btn mui-btn--raised mui-btn--danger"
+                        id="submit"
+                        disabled
+                >
+                    Задать вопрос
+                </button>
+            </form>
+            <br><br>
+            <div class="mui--text-black-54 mui--text-body2">Список ваших вопросов</div>
+            <div class="mui-divider"></div>
+            <br>
+            <div id="list"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
